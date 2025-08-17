@@ -1,0 +1,224 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, black, rgb(36, 35, 35));
+    color: white;
+
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+#inicio {
+    align-items: center;
+    background: linear-gradient(to bottom, black, rgb(0, 0, 0));
+    position: sticky;
+    top: 0;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid red;
+}
+
+.nav_cabecalho a {
+    margin-right: 2rem;
+    text-decoration: none;
+    color: white;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.nav_cabecalho a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(190, 26, 26);
+}
+
+.nav_cabecalho {
+    margin-right: 100px;
+}
+
+.img_cabecalho {
+    margin-left: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img_cabecalho:hover {
+    transform: scale(1.2, 0.8);
+}
+
+.logo_whats {
+    width: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.box_1 {
+    margin-top: 2%;
+    padding: 2%;
+}
+
+.box_1_textos {
+    margin-top: 3%;
+    margin-left: 13%;
+}
+
+.flutuante_direita {
+    width: 30%;
+    float: right;
+}
+
+.box_caixa_pesquisa {
+    position: relative;
+    width: 200px;
+}
+
+.box_caixa_pesquisa:hover {
+    position: relative;
+    width: 300px;
+}
+
+.input_pesquisa {
+    width: 100%;
+    padding: 4%;
+    border: 2px solid rgb(29, 28, 28);
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lupa_pesquisa {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.box_2 {
+        
+    padding: 2%;
+}
+
+.box_2_textos {
+    margin-top: 5%;
+    margin-left: 35%;
+    margin-right: 13%;
+}
+
+h2 {
+    font-size: 3rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+h2,
+h3 {
+    font-family: "Barriecito", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 23px;
+}
+
+.box_2_paragrafo {
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.flutuante_esquerda {
+    width: 15%;
+    float: left;
+    margin-left: 13%;
+}
+
+.botao_1 {
+    width: 40%;
+    padding: 1%;
+    border: 2px solid rgb(29, 28, 28);
+    background: rgba(0, 0, 0, 0);
+    color: rgb(87, 86, 86);
+    font-size: 16px;
+    border-radius: 3px;
+    outline: none;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.botao_1:hover {
+    cursor: pointer;
+    border: 3px solid rgb(29, 28, 28);
+
+}
+
+.box_3_titulo {
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.bloco {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.bloco img {
+    width: 40%;
+    height: auto;
+}
+
+.botoes_galeria {
+    width: 50%;
+    padding: 1%;
+    border: 2px solid rgb(29, 28, 28);
+    background: rgba(0, 0, 0, 0);
+    color: rgb(87, 86, 86);
+    font-size: 16px;
+    border-radius: 3px;
+    outline: none;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.botoes_galeria:hover {
+    cursor: pointer;
+    border: 3px solid rgb(29, 28, 28);
+
+}
