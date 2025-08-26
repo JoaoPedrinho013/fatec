@@ -1,4 +1,4 @@
-# 🍔 BurguerTech
+#  BurguerTech
 
 Projeto desenvolvido para a disciplina de **Desenvolvimento Web  2** com a professora *Eulaliane Aparecida Goncalvez*.  
 O objetivo foi criar uma tela de menu de uma lanchonete utilizando **HTML e CSS** para o layout, e **PHP** para receber os dados do formulário e exibir o resumo do pedido junto com os valores.
