@@ -4,7 +4,7 @@ public class Carro {
     public String modelo;
     public int capacidadeTanque;
 
-    private boolean ligado = false;
+    public boolean ligado = false;
 
     public void ligar(){
         if(!ligado) {
