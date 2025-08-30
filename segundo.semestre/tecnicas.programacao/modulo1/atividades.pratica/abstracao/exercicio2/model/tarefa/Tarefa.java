@@ -1,4 +1,4 @@
-package model;
+package model.tarefa;
 
 public class Tarefa {
     

@@ -1,4 +1,4 @@
-package model;
+package model.redeSocial;
 
 public class RedeSocial {
     

@@ -1,4 +1,4 @@
-package model;
+package model.sistemaOperacional;
 
 public class SistemaOperacional {
     

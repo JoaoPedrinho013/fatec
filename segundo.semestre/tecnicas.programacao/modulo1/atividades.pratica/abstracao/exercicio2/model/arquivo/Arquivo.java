@@ -1,4 +1,4 @@
-package model;
+package model.arquivo;
 
 public class Arquivo {
     public String nome, tipoArquivo;

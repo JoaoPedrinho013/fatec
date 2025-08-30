@@ -1,4 +1,4 @@
-package model;
+package model.aplicativo;
 
 public class Aplicativo {
     public String nome, categoria, desenvolvedor, versao;

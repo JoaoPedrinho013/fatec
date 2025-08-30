@@ -1,4 +1,4 @@
-package model;
+package model.curso;
 
 public class Curso {
     

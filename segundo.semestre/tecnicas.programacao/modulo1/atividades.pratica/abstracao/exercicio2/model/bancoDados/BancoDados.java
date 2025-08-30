@@ -1,4 +1,4 @@
-package model;
+package model.bancoDados;
 
 public class BancoDados {
     

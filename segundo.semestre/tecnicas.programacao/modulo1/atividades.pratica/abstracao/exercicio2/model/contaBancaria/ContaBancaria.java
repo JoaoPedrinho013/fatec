@@ -1,4 +1,4 @@
-package model;
+package model.contaBancaria;
 public class ContaBancaria {
     
 }

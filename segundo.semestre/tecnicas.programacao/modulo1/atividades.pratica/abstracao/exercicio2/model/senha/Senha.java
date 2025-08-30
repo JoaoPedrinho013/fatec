@@ -1,4 +1,4 @@
-package model;
+package model.senha;
 
 public class Senha {
     
