@@ -3,11 +3,12 @@ package view;
 import model.aplicativo.Aplicativo;
 import model.arquivo.Arquivo;
 import model.aula.Aula;
+import model.avaliacao.Avaliacao;
 
 public class Main {
     public static void main(String[] args) {
 
-        {   Aplicativo freeFire = new Aplicativo();
+       /* {   Aplicativo freeFire = new Aplicativo();
             freeFire.nome = "Free Fire";
             freeFire.categoria = "Tiro";
             freeFire.desenvolvedor = "Garena";
@@ -72,7 +73,16 @@ public class Main {
             estruturaDados.calcularMedia(9.7, 9.1, 7.3);
             estruturaDados.detalhes();
         }
-        System.out.println("###---###---###---###---###");
+        System.out.println("###---###---###---###---###"); */ 
+        {   Avaliacao bancoDados = new Avaliacao();
+            bancoDados.aluno = "João Pedro";
+            bancoDados.materia = "Banco de Dados Relacional";
+            bancoDados.regras = "Sem consulta e sem colar";
+            bancoDados.gabarito = "1-B, 2-C, 3-A, 4-E, 5-D";
+            bancoDados.tempoLimite = 1.30;
 
+            bancoDados.detalhes();
+
+        }
     }
 }
