@@ -4,6 +4,9 @@ import model.aplicativo.Aplicativo;
 import model.arquivo.Arquivo;
 import model.aula.Aula;
 import model.avaliacao.Avaliacao;
+import model.bancoDados.BancoDados;
+import model.cliente.Cliente;
+import model.contaBancaria.ContaBancaria;
 
 public class Main {
     public static void main(String[] args) {
@@ -73,16 +76,101 @@ public class Main {
             estruturaDados.calcularMedia(9.7, 9.1, 7.3);
             estruturaDados.detalhes();
         }
-        System.out.println("###---###---###---###---###"); */ 
+        System.out.println("###---###---###---###---###");
         {   Avaliacao bancoDados = new Avaliacao();
             bancoDados.aluno = "João Pedro";
             bancoDados.materia = "Banco de Dados Relacional";
             bancoDados.regras = "Sem consulta e sem colar";
             bancoDados.gabarito = "1-B, 2-C, 3-A, 4-E, 5-D";
             bancoDados.tempoLimite = 1.30;
-
+            
+            bancoDados.preencherGabarito("1-B", "2-C", "3-A", "4-E", "5-D");
             bancoDados.detalhes();
-
         }
+        System.out.println("###---###---###---###---###");
+        {   Avaliacao web2 = new Avaliacao();
+            web2.aluno = "João Pedro";
+            web2.materia = "Desenvolvimento web 2";
+            web2.regras = "Sem consulta e sem colar";
+            web2.gabarito = "1-E, 2-C, 3-C, 4-E, 5-D";
+            web2.tempoLimite = 1.30;
+            
+            web2.preencherGabarito("1-B", "2-C", "3-A", "4-E", "5-D");
+            web2.detalhes();
+        }
+        System.out.println("###---###---###---###---###");
+        BancoDados postgresql = new BancoDados();
+        postgresql.nomeBanco = "PostgreSQL";
+        postgresql.tipoBanco = "SQL";
+        postgresql.quantidadeTabela = 3;
+        postgresql.dataCriacao = "11/11/2001";
+        postgresql.dataAtualizacao = "11/11/2001";
+
+        postgresql.conectarBanco();
+        postgresql.detalhes();
+
+        System.out.println("###---###---###---###---###");
+
+        BancoDados mongoDB = new BancoDados();
+        mongoDB.nomeBanco = "MongoDB";
+        mongoDB.tipoBanco = "NoSQL";
+        mongoDB.quantidadeTabela = 5;
+        mongoDB.dataCriacao = "12/12/2006";
+        mongoDB.dataAtualizacao = "12/12/2006";
+
+        mongoDB.conectarBanco();
+        mongoDB.detalhes();
+
+        System.out.println("###---###---###---###---###"); 
+
+        Cliente pedro = new Cliente();
+        pedro.nome = "Pedro";
+        pedro.cpf = "874.742.321-76";
+        pedro.telefone = "(13)4002-8922";
+        pedro.email = "pedro.fatec.sp.gov.br";
+        pedro.idade = 21;
+
+        pedro.pagar("Pix");
+        pedro.detalhes();
+
+        System.out.println("###---###---###---###---###");
+
+        Cliente joao = new Cliente();
+        joao.nome = "João";
+        joao.cpf = "874.742.321-76";
+        joao.telefone = "(13)4002-8922";
+        joao.email = "joao.fatec.sp.gov.br";
+        joao.idade = 31;
+
+        joao.avaliar(5);
+        joao.detalhes();
+
+        System.out.println("###---###---###---###---###"); */
+
+        ContaBancaria pedro = new ContaBancaria();
+        pedro.agencia = "Pedro";
+        pedro.conta = "874.742.321-76";
+        pedro.tipoConta = "(13)4002-8922";
+        pedro.nomeCliente = "pedro.fatec.sp.gov.br";
+        pedro.cpfCliente = "874.742.321-76";
+
+        pedro.exibirSaldo("R$23,547,00");
+        pedro.detalhes();
+
+        System.out.println("###---###---###---###---###");
+
+        ContaBancaria joao = new ContaBancaria();
+        joao.agencia = "João";
+        joao.conta = "874.742.321-76";
+        joao.tipoConta = "(13)4002-8922";
+        joao.nomeCliente = "joao.fatec.sp.gov.br";
+        joao.cpfCliente = "874.742.321-76";
+
+
+        joao.exibirSaldo("R$130,03,00");
+        joao.detalhes();
+
+        System.out.println("###---###---###---###---###");
+    
     }
 }
