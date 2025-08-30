@@ -2,6 +2,7 @@ package view;
 
 import model.Aplicativo;
 import model.Arquivo;
+import model.aula.Aula;
 
 
 public class Main {
